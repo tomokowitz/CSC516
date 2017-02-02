@@ -1,0 +1,15 @@
+Homework 1
+
+Have a new class called VisitingStudent. A VisitingStudent is a kind of a student
+with a country and a native language. The VisitingStudent has country and 
+nativeLanguage properties, the appropriate constructors, and a toString() method 
+that includes the country and native language.
+
+Modify ex9.java from the first set of notes to include visiting students initially 
+and we can also add them. The new filename should be <lastname>1.java 
+(for example, avitabile1.java).
+
+When you finish, make a zip file that includes your application, project, and 
+java files. It should contain everything, not just the java files. Also, 
+tell me what version of JDeveloper you created it with. Do this for all 
+homework assignments.
