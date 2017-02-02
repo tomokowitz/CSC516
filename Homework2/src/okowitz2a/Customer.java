@@ -10,7 +10,7 @@ public abstract class Customer implements Comparable
     }
     public abstract void customerInfo()
     {
-        
+            
     }
     private String name;
     private String email;
