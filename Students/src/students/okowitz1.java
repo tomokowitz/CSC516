@@ -10,7 +10,7 @@ package students;
 
         import javax.swing.JOptionPane;
 
-        public class okowitzt1
+        public class okowitz1
         {
             public static void main(String[] args) 
             {
@@ -23,6 +23,7 @@ package students;
                                                        "Monroe High"));
                 students.add( new UndergradStudent("Prince", "Charming", "44", 
                                                        "Madison High")); 
+                students.add( new VisitingStudent("Pinnochio", "Pepperoni", "101","Italian","Italy"));
                 li = students.listIterator();
                 current = (Student) li.next();
                 System.out.println(current);

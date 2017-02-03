@@ -26,5 +26,6 @@ public abstract class Customer implements Comparable
     public int compareTo(Object o)
     {
         
+        compareToIgnoreCase();
     }
 }
