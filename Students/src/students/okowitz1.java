@@ -5,7 +5,6 @@ package students;
 
         import java.util.LinkedList;
         import java.util.ListIterator;
-
         import java.util.NoSuchElementException;
 
         import javax.swing.JOptionPane;
@@ -24,6 +23,7 @@ package students;
                 students.add( new UndergradStudent("Prince", "Charming", "44", 
                                                        "Madison High")); 
                 students.add( new VisitingStudent("Pinnochio", "Pepperoni", "101","Italian","Italy"));
+                students.add( new VisitingStudent("Pablo", "Picasso", "201","Spanish","France"));
                 li = students.listIterator();
                 current = (Student) li.next();
                 System.out.println(current);
@@ -34,6 +34,7 @@ package students;
                                                      "Previous\n" +
                                                      "Add Undergrad Student\n" +
                                                      "Add Grad Student\n" +
+                                                     "Add Visiting Student\n" +
                                                      "Remove First\n" + 
                                                      "Remove Last");
                 while (! choice.equalsIgnoreCase("Quit")) 
@@ -89,12 +90,21 @@ package students;
                         // restart list iterator if add or remove
                         System.out.println(input + " added");
                     }
+                    if (choice.equalsIgnoreCase("Add Visiting Student")) 
+                    {
+                        VisitingStudent input = new VisitingStudent();
+                        students.addLast(input);
+                        li = students.listIterator();
+                        // restart list iterator if add or remove
+                        System.out.println(input + " added");
+                    }
                     choice = JOptionPane.showInputDialog("Enter your choice\n" +
                                                          "Quit\n" +
                                                          "Next\n" +
                                                          "Previous\n" +
                                                          "Add Undergrad Student\n" +
                                                          "Add Grad Student\n" +
+                                                         "Add Visiting Student\n" +
                                                          "Remove First\n" + 
                                                          "Remove Last");      
                 }

@@ -24,23 +24,19 @@ public class VisitingStudent extends Student
     
     public String toString() 
     {
-        return "Name: " + this.getFirstName() + " " + this.getLastName() +
-               " SID: " + this.getSID() + " First language: " + this.getLanguage()  +
-               " Country: " + this.getCountry();
+        return super.toString() +  " with First language: " + this.nativeLanguage  +
+               " Country: " + this.country;
     }
     
-    public String getLanguage() 
-    {
-        return nativeLanguage;
-    }
-    
-    public String getCountry() 
-    {
-        return country;
-    }
-        }
-    
-    
+   // public String getLanguage() {
+   //     return nativeLanguage;
+   // }
+
+   // public String getCountry() {
+   //     return country;
+    //}
+
+
 }
 
 
