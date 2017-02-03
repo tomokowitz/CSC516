@@ -1,5 +1,7 @@
 package okowitz2a;
 
+import javax.swing.JOptionPane;
+
 public abstract class Customer implements Comparable
 
 {
@@ -8,6 +10,12 @@ public abstract class Customer implements Comparable
         this.name = Name;
         this.email = E_mail;
     }
+    public Customer()
+        {
+            name = JOptionPane.showInputDialog("Enter name");
+            email = JOptionPane.showInputDialog("Enter email");
+           
+        }
     public abstract void customerInfo()
     {
             
