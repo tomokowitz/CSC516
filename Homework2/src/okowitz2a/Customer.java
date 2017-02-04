@@ -10,23 +10,23 @@ public abstract class Customer implements Comparable
         this.name = Name;
         this.email = E_mail;
     }
-    public Customer()
-        {
-            name = JOptionPane.showInputDialog("Enter name");
-            email = JOptionPane.showInputDialog("Enter email");
-           
-        }
-    public abstract void customerInfo()
-    {
-            
+    
+    public Customer(){
+        
+        name = JOptionPane.showInputDialog("Enter customer name");
+                email = JOptionPane.showInputDialog("Enter customer email");
+               
     }
+    public abstract void customerInfo();
+   
+    
     private String name;
     private String email;
     
     public String GetName()
     {
         return name;
-    }
+    } 
     public String GetEmail()
     {
         return email;
