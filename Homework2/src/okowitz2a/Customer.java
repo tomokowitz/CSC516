@@ -33,7 +33,10 @@ public abstract class Customer implements Comparable
     }
     public int compareTo(Object o)
     {
-        
-        compareToIgnoreCase();
+        Customer c2 = (Customer) o; 
+                String c1Email = GetEmail();
+                String c2Email = c2.GetEmail();
+                return c1Email.compareToIgnoreCase(c2Email); 
+     
     }
 }
