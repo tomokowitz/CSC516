@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class HomeCustomer extends Customer {
     public HomeCustomer(String name, String email) {
         super(name, email);
-        this.CustType = "Business";
+        this.CustType = "Home";
     }
     public HomeCustomer(){
         super();
