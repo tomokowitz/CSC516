@@ -8,7 +8,7 @@ public class ex1 {
  public static void main(String args[])
  {
  
-  String url = "jdbc:odbc:registrar";
+  String url = "jdbc:odbc:bakery";
   // more generally, url = "jdbc:mySubprotocol:myDataSource";
     
   Connection con;
