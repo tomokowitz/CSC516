@@ -8,6 +8,6 @@ public interface Customer {
     /**
      * @return
      */
-    public String customerInfo();
+    public void customerInfo();
     
 }

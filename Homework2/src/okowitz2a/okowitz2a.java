@@ -39,13 +39,13 @@ public class okowitz2a {
                             {
                                 BusinessCustomer input = new BusinessCustomer();
                                 customers.add(input);
-                                System.out.println(input + " added");
+                                input.customerInfo();
                             }
                             else if (choice.equalsIgnoreCase("Add Home Customer"))
                             {
                                 HomeCustomer input = new HomeCustomer();
                                 customers.add(input);
-                                System.out.println(input + " added");
+                                input.customerInfo();
                             }
                             choice = JOptionPane.showInputDialog("Enter your choice\n" +
                                                                  "Quit\n" +
@@ -63,7 +63,9 @@ public class okowitz2a {
             System.out.println();      
             while (li.hasNext())
             {
-                System.out.println(li.next());
+                Customer cust ;
+                cust = (Customer)li.next();
+                cust.customerInfo();
             }
         }    
             

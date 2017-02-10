@@ -31,7 +31,9 @@ public class okowitz2b {
             System.out.println();      
             while (li.hasNext())
             {
-                System.out.println(li.next());
+                Customer cust ;
+                cust = (Customer)li.next();
+                cust.customerInfo();
             }
         }    
 }

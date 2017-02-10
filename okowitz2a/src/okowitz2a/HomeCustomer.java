@@ -22,7 +22,5 @@ public class HomeCustomer extends Customer {
         System.out.println(custInfo);
     }
     private String CustType;
-    public int compareTo(Object o) {
-        return 0;
-    }
+    
 }

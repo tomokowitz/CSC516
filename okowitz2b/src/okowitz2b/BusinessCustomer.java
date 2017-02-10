@@ -1,6 +1,6 @@
 package okowitz2b;
 
-public class BusinessCustomer implements Customer {
+public class BusinessCustomer implements Customer, Comparable {
     /**
      * @param Name
      * @param Email
@@ -20,9 +20,11 @@ public class BusinessCustomer implements Customer {
     {
         return email;
     }
-    public String customerInfo()
+    public void customerInfo()
     {
-        return "text:" + name + " more text: " + email;
+        String custInfo = "Customer name: "  + this.getName() +
+                     "\nCustomer email: " + this.getEmail()+
+                     "\n";
     }
     public int compareTo(Object o)
     {
