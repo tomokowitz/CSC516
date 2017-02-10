@@ -1,6 +1,10 @@
 package okowitz2b;
 
 public class HomeCustomer implements Customer {
+    /**
+     * @param Name
+     * @param Email
+     */
     public HomeCustomer(String Name, String Email) {
         this.name = Name;
         this.email = Email;

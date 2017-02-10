@@ -1,0 +1,19 @@
+Homework 3
+
+All homework for this semester that use a database will  either use the file 
+bakery.accdb or bakery.mdb. Both files are contained in a zip file named 
+bakery.zip. Download it and unzip the files. Register one of them using ODBC.
+
+The ER diagram for this database is:
+
+
+
+ 
+
+Your project (named <lastname>3 - for example avitabile3) should include the following:
+
+A program named <lastname>3a.java that, using a Prepared Statement, executes the
+query of your choice from the database and outputs the results.
+A program named <lastname>3b.java that lets the user enter data to be inserted
+into the CAKES table, thereby adding a new cake.
+Make sure that your URL for the connection is: jdbc:odbc:bakery
