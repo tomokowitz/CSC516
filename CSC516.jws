@@ -21,5 +21,9 @@
          <value n="nodeClass" v="oracle.ide.model.Project"/>
          <url n="URL" path="okowitz3a/okowitz3a.jpr"/>
       </hash>
+      <hash>
+         <value n="nodeClass" v="oracle.ide.model.Project"/>
+         <url n="URL" path="okowitz4/okowitz4.jpr"/>
+      </hash>
    </list>
 </jws:workspace>
