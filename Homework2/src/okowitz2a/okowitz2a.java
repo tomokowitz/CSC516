@@ -12,13 +12,14 @@ public class okowitz2a {
 
     public static void main(String[] args) {
         okowitz2a okowitz2a = new okowitz2a();
-        
-        
-        TreeSet customers = new TreeSet();
+
+
+        TreeSet customers;
+        customers = new TreeSet();
         customers.add(new BusinessCustomer("abc cab co","customer@abccab.com"));
                 customers.add(new BusinessCustomer("xyz courier co","customer@xyzcouriers.com"));
-                customers.add(new HomeCustomer("abc cab co","customer@abccab.com"));
-                customers.add(new HomeCustomer("abc cab co","customer@abccab.com"));
+                customers.add(new HomeCustomer("Fred Flinstone","customer@bedrock.com"));
+                customers.add(new HomeCustomer("Barney Rubble","customer@MarbleMouth.com"));
                 
                 
                 String choice;
@@ -28,7 +29,7 @@ public class okowitz2a {
                                                              "Add Business Customer\n" +
                                                              "Add Home Customer");
                 
-                while (! choice.equalsIgnoreCase("Quit"))
+                while (!choice.equalsIgnoreCase("Quit"))
                         {
                             if (choice.equalsIgnoreCase("Print"))
                             {
