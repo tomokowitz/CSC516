@@ -22,7 +22,7 @@ public class ex1 {
   // statement and obtaining
   // the results produced by it.
  
-  String query = "select * from COURSES";
+  String query = "select * from CUSTOMERS";
  
   try
   {
