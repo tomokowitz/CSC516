@@ -7,6 +7,8 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 
 public class okowitz4 extends HttpServlet {
+    @SuppressWarnings("compatibility:4957086901941085242")
+    private static final long serialVersionUID = 1L;
     private static final String CONTENT_TYPE = "text/html; charset=windows-1252";
 
     public void init(ServletConfig config) throws ServletException {
@@ -31,7 +33,8 @@ public class okowitz4 extends HttpServlet {
     public void doPost(HttpServletRequest request, 
                        HttpServletResponse response) throws ServletException, 
                                                             IOException {
-        String var0 = "";
+        String name = "";
+                   name = request.getParameter("");
         String var1 = "";
         response.setContentType(CONTENT_TYPE);
         PrintWriter out = response.getWriter();

@@ -1,0 +1,15 @@
+Homework 4
+  
+Create a project named <lastname>4.
+ 
+In that project, create the following files:
+ 
+An html file named <lastname4>.htm that contains a form and a number of form elements. 
+Try using form elements other than text fields as well as using text fields. 
+The submit for the form calls a servlet.  The servlet (named <lastname4>.java)
+does some sort of calculation and displays the result.
+ 
+ 
+ 
+ 
+ 

@@ -1,13 +1,19 @@
 package okowitz3a;
 
 
-import java.sql.*;
- 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 public class ex1 {
  
  public static void main(String args[])
  {
  
+
+           
   String url = "jdbc:odbc:bakery";
   // more generally, url = "jdbc:mySubprotocol:myDataSource";
     
@@ -22,27 +28,8 @@ public class ex1 {
   // statement and obtaining
   // the results produced by it.
  
-  String query = "select * from COURSES";
+  String query = "select * from CUSTOMERS";
  
-  try
-  {
-   Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-      // the general form would be:
-      // Class.forName("myDriver.ClassName")
-      // loads the JDBC-ODBC Bridge driver
-      // The function returns the Class object associated with
-      // the class with the given string name. Given the
-      // fully-qualified name for a class or interface,
-      // this method attempts to locate, load and link the
-      // class. If it succeeds, returns the Class object
-      // representing the class. If it fails, the method
-      // throws a ClassNotFoundException.
-  }
-  catch(java.lang.ClassNotFoundException e)
-  {
-   System.err.print("ClassNotFoundException: ");
-   System.err.println(e.getMessage());
-  }
  
  
 
@@ -54,8 +41,9 @@ public class ex1 {
    // JDBC drivers.
    // Genral form is:
    // DriverManager.getConnection(url, "myLogin", "myPassword");
-   con = DriverManager.getConnection(url, "", "");
-  
+   //con = DriverManager.getConnection(url, "", "");
+   con =   DriverManager.getConnection(
+              "jdbc:ucanaccess://C:/Users/Tom Okowitz/Documents/IT and Software/jdbc/bakery.accdb");
    // Returns a new Statement object for this Connection
    stmt = con.createStatement();
  
@@ -64,18 +52,18 @@ public class ex1 {
    ResultSet rs = stmt.executeQuery(query);
   
    // Prints to standard output
-   System.out.println("Course Data:");
-   System.out.println("Course\tTitle\tCredits");
+   System.out.println("Customer Data:");
+   System.out.println("CustomerID\tCustomerName\tCustomerEmail");
  
    // the current row in the ResultSet is before the first row
    while (rs.next()) // advances the current row until no more
    {
     // get the data from the current row
-    String course = rs.getString("COURSE");
-    String description = rs.getString("DESCRIPTION");
-    int credits = rs.getInt("CREDITS");
-    System.out.println(course + "\t" + description + "\t" +
-                       credits);
+    int customerID = rs.getInt("CustomerID");
+    String customerName = rs.getString("CustomerName");
+    String customerEmail = rs.getString("CustomerEmail");
+    System.out.println(customerID + "\t" + customerName + "\t" +
+                       customerEmail);
    }
    // In many cases, it is desirable to immediately release a
    // Statements's database and JDBC resources instead of

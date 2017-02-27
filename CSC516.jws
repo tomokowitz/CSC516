@@ -27,7 +27,38 @@
       <hash><url n="URL" path="okowitz1a/okowitz1a.jpr"/></hash>
       <hash><url n="URL" path="okowitz2a/okowitz2a.jpr"/></hash>
       <hash><url n="URL" path="okowitz2b/okowitz2b.jpr"/></hash>
-      <hash><url n="URL" path="okowitz3a/okowitz3a.jpr"/></hash>
+      <hash><url n="URL" path="okowitz3/okowitz3.jpr"/></hash>
       <hash><url n="URL" path="okowitz4/okowitz4.jpr"/></hash>
    </list>
+   <hash n="oracle.jdeveloper.model.ApplicationLibraries">
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/loader/ucanload.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ucanload.jar"/>
+               <value n="id" v="Ucanload.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+         </list>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="Ucanload.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="ApplicationSrcContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="src/"/>
+         </list>
+      </hash>
+   </hash>
 </jws:workspace>

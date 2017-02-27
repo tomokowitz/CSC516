@@ -124,12 +124,50 @@
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="javaContentSet">
-         <list n="pattern-filters">
-            <string v="+**"/>
+         <list n="constituent-sets">
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/"/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="-UCanAccess-4.0.1-bin/"/>
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/"/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="-net/ucanaccess/util/"/>
+                  <string v="-net/ucanaccess/triggers/"/>
+                  <string v="-net/ucanaccess/jdbc/"/>
+                  <string v="-net/ucanaccess/ext/"/>
+                  <string v="-net/ucanaccess/converters/"/>
+                  <string v="-net/ucanaccess/console/"/>
+                  <string v="-net/ucanaccess/complex/"/>
+                  <string v="-net/ucanaccess/commands/"/>
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="../../../../../../../Program Files/UCanAccess-4.0.1-src/UCanAccess-4.0.1-src/src/main/java/"/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="../../../../../../../Program Files/UCanAccess-4.0.1-src/UCanAccess-4.0.1-src/src/loader/java/"/>
+               </list>
+            </hash>
          </list>
-         <list n="url-path">
-            <url path="src/"/>
-         </list>
+         <list n="url-path"/>
       </hash>
    </hash>
    <hash n="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings">
@@ -151,6 +189,101 @@
       </hash>
       <list n="runConfigurationList">
          <string v="Default"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <value n="id" v="Ucanaccess-4.0.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.6.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-logging-1.1.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hsqldb.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackcess-2.1.6.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/ucanaccess-4.0.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Ucanaccess-4.0.1.jar"/>
+               <value n="id" v="Ucanaccess-4.0.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/lib/commons-lang-2.6.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-lang-2.6.jar"/>
+               <value n="id" v="Commons-lang-2.6.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/lib/commons-logging-1.1.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-logging-1.1.1.jar"/>
+               <value n="id" v="Commons-logging-1.1.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/lib/hsqldb.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Hsqldb.jar"/>
+               <value n="id" v="Hsqldb.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/lib/jackcess-2.1.6.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jackcess-2.1.6.jar"/>
+               <value n="id" v="Jackcess-2.1.6.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+         </list>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="Ucanaccess-4.0.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-lang-2.6.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-logging-1.1.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Hsqldb.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackcess-2.1.6.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">

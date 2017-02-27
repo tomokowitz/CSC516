@@ -10,6 +10,7 @@ public class okowitz2a {
     public okowitz2a() {
     }
 
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         okowitz2a okowitz2a = new okowitz2a();
 
