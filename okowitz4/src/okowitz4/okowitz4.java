@@ -18,8 +18,20 @@ public class okowitz4 extends HttpServlet {
     public void doGet(HttpServletRequest request, 
                       HttpServletResponse response) throws ServletException, 
                                                            IOException {
-        String var0 = "";
-        String var1 = "";
+        Double type = 0.00;
+        
+        Double age = 0.00;
+        
+        try
+            {
+                   type = Double.parseDouble(request.getParameter("animalType"));
+            age = Double.parseDouble(request.getParameter("age"));
+        }
+            catch(Exception e)
+            {
+              e.printStackTrace();
+            }
+            
         response.setContentType(CONTENT_TYPE);
         PrintWriter out = response.getWriter();
         out.println("<html>");
@@ -33,15 +45,17 @@ public class okowitz4 extends HttpServlet {
     public void doPost(HttpServletRequest request, 
                        HttpServletResponse response) throws ServletException, 
                                                             IOException {
-        String name = "";
-                   name = request.getParameter("");
-        String var1 = "";
+        Double type = 0.00;
+                   type = Double.parseDouble(request.getParameter("animalType"));
+        Double age = Double.parseDouble(request.getParameter("age"));
+        Double manAge;
+        manAge = age * type;
         response.setContentType(CONTENT_TYPE);
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<head><title>okowitz4</title></head>");
         out.println("<body>");
-        out.println("<p>The servlet has received a POST. This is the reply.</p>");
+        out.println("<p>The age of your animal is " + manAge.toString() + ".</p>");
         out.println("</body></html>");
         out.close();
     }
