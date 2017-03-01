@@ -18,27 +18,12 @@
    </hash>
    <list n="contentSets">
       <string v="oracle.mds.internal.dt.ide.appresources.MDSAppResourceCSProvider/MDSAppContentSet"/>
-      <string v="oracle.jdeveloper.model.PathsConfiguration/ADFContentSet"/>
       <string v="oracle.jdeveloper.model.PathsConfiguration/ApplicationSrcContentSet"/>
+      <string v="oracle.jdeveloper.model.PathsConfiguration/ADFContentSet"/>
       <string v="oracle.jdeveloper.model.PathsConfiguration/ApplicationBuildToolContentSet"/>
       <string v="oracle.jdeveloper.model.PathsConfiguration/ResourceBundlesContentSet"/>
    </list>
    <list n="listOfChildren">
       <hash><url n="URL" path="okowitz4/okowitz4.jpr"/></hash>
    </list>
-   <hash n="oracle.jdeveloper.model.PathsConfiguration">
-      <hash n="ApplicationSrcContentSet">
-         <list n="pattern-filters">
-            <string v="+**"/>
-         </list>
-         <list n="url-path">
-            <url path="src/"/>
-         </list>
-      </hash>
-   </hash>
-   <hash n="oracle.mds.internal.dt.ide.CustOptions">
-      <list n="customizationLibraries">
-         <hash/>
-      </list>
-   </hash>
 </jws:workspace>
