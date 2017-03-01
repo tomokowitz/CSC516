@@ -14,4 +14,12 @@
         <extension>txt</extension>
         <mime-type>text/plain</mime-type>
     </mime-mapping>
+    <servlet-mapping>
+        <servlet-name>ex4</servlet-name>
+        <url-pattern>/ex4</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ex7</servlet-name>
+        <servlet-class>ex7</servlet-class>
+    </servlet>
 </web-app>

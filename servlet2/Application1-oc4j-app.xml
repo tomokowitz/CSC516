@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<orion-application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oracle.com/technology/oracleas/schema http://xmlns.oracle.com/oracleas/schema/orion-application-10_0.xsd" version="10.0" xmlns="http://www.oracle.com/technology/oracleas/schema">
+    <web-module id="Application1-Project1-webapp" path="file:/C:/Users/john/Desktop/516/servlet2/Project1/public_html/"/>
+    <log>
+        <file path="Application1-oc4j-app.log" xmlns=""/>
+    </log>
+    <jazn provider="XML" location="Application1-jazn-data.xml" default-realm="jazn.com"/>
+    <data-sources path="Application1-data-sources.xml"/>
+</orion-application>

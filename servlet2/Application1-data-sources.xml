@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/oracleas/schema http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" version="10.1" xmlns="http://xmlns.oracle.com/oracleas/schema">
+    <connection-pool name="jdev-connection-pool-RegistrarConnection">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="registrar" password="->DataBase_User_FHtEIbCaLXOYSxQ6eQ-mdmMq1DjJg21yfzOuS5I2fV8=" url="jdbc:oracle:thin:@localhost:1521:XE"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-RegistrarConnection" jndi-name="jdbc/RegistrarConnectionDS" connection-pool-name="jdev-connection-pool-RegistrarConnection"/>
+    <native-data-source name="jdev-connection-native-RegistrarConnection" jndi-name="jdbc/RegistrarConnectionCoreDS" url="jdbc:oracle:thin:@localhost:1521:XE" user="registrar" password="->DataBase_User_HRm8jQUUgk-zjEmbakCCCX8k0KLvLCW_CnBDUCDH0DE=" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-HRConnection">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="hr" password="->DataBase_User_u9nIAjU_h2hqW7zRpxKUwN4skGsZ6XJg" url="jdbc:oracle:thin:@localhost:1521:XE"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-HRConnection" jndi-name="jdbc/HRConnectionDS" connection-pool-name="jdev-connection-pool-HRConnection"/>
+    <native-data-source name="jdev-connection-native-HRConnection" jndi-name="jdbc/HRConnectionCoreDS" url="jdbc:oracle:thin:@localhost:1521:XE" user="hr" password="->DataBase_User_BJNaZPXovFZ04iTy4Lw3AzoTjLMt106-" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+</data-sources>
