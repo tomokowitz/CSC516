@@ -1,5 +1,3 @@
-package okowitz4;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -13,11 +11,13 @@ public class okowitz4 extends HttpServlet {
         super.init(config);
     }
 
+    /**Process the HTTP doGet request.
+     */
     public void doGet(HttpServletRequest request, 
                       HttpServletResponse response) throws ServletException, 
                                                            IOException {
-        String var0 = "";
-        String var1 = "";
+        String AnimalType = "";
+        int AnimalAge;
         response.setContentType(CONTENT_TYPE);
         PrintWriter out = response.getWriter();
         out.println("<html>");
@@ -28,11 +28,13 @@ public class okowitz4 extends HttpServlet {
         out.close();
     }
 
+    /**Process the HTTP doPost request.
+     */
     public void doPost(HttpServletRequest request, 
                        HttpServletResponse response) throws ServletException, 
                                                             IOException {
-        String var0 = "";
-        String var1 = "";
+        String AnimalType = "";
+        int AnimalAge;
         response.setContentType(CONTENT_TYPE);
         PrintWriter out = response.getWriter();
         out.println("<html>");

@@ -41,16 +41,6 @@
    </hash>
    <hash n="oracle.ide.model.ResourcePaths">
       <hash n="resourcesContentSet">
-         <list n="constituent-sets">
-            <hash>
-               <list n="pattern-filters">
-                  <string v="+webapp.deploy"/>
-               </list>
-               <list n="url-path">
-                  <url path="deploy/"/>
-               </list>
-            </hash>
-         </list>
          <list n="pattern-filters">
             <string v="+*"/>
          </list>
@@ -59,19 +49,12 @@
          </list>
       </hash>
    </hash>
-   <hash n="oracle.ide.model.TechnologyScopeConfiguration">
-      <list n="technologyScope">
-         <string v="Java"/>
-         <string v="HTML"/>
-         <string v="JSP"/>
-      </list>
-   </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
       <value n="internalEncoding" v="Cp1252"/>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="CSC516-okowitz4-webapp"/>
-      <value n="j2eeWebContextRoot" v="CSC516-okowitz4-context-root"/>
+      <value n="j2eeWebAppName" v="okowitz4-okowitz4-webapp"/>
+      <value n="j2eeWebContextRoot" v="okowitz4-okowitz4-context-root"/>
       <hash n="webContentSet">
          <list n="url-path">
             <url path="public_html/"/>
@@ -112,19 +95,11 @@
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
          <hash>
-            <value n="id" v="JSP Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
             <value n="id" v="Servlet Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
       <list n="libraryReferences">
-         <hash>
-            <value n="id" v="JSP Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
          <hash>
             <value n="id" v="Servlet Runtime"/>
             <value n="isJDK" v="false"/>
@@ -132,7 +107,7 @@
       </list>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
-      <url n="outputDirectory" path="public_html/WEB-INF/classes/"/>
+      <url n="outputDirectory" path="classes/"/>
    </hash>
    <hash n="oracle.tip.tools.ide.pm.addin.PMProjectSettings">
       <hash n="Integration_Content">

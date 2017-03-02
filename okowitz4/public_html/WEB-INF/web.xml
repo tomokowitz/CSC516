@@ -3,7 +3,7 @@
     <description>Empty web.xml file for Web Application</description>
     <servlet>
         <servlet-name>okowitz4</servlet-name>
-        <servlet-class>okowitz4.okowitz4</servlet-class>
+        <servlet-class>okowitz4</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>okowitz4</servlet-name>
