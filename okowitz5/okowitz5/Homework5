@@ -1,0 +1,9 @@
+Homework 5
+ 
+ Create a project named <lastname>5. Put the following within it:
+Write an html file named <lastname>5.htm that lets the user enter data to be 
+inserted into the CAKES table, and write a servlet named <lastname>5a.java 
+that checks to see if there already is a cake with that CAKEID. If everything’s
+ok, do a forward to a second servlet named <lastname>5b.java that does the 
+insert. If there’s a problem, do a forward to a third servlet 
+named <lastname>5c.java that prints an error message.
