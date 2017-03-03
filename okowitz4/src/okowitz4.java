@@ -33,15 +33,18 @@ public class okowitz4 extends HttpServlet {
     public void doPost(HttpServletRequest request, 
                        HttpServletResponse response) throws ServletException, 
                                                             IOException {
-        String AnimalType = "";
-        int AnimalAge;
-        response.setContentType(CONTENT_TYPE);
-        PrintWriter out = response.getWriter();
-        out.println("<html>");
-        out.println("<head><title>okowitz4</title></head>");
-        out.println("<body>");
-        out.println("<p>The servlet has received a POST. This is the reply.</p>");
-        out.println("</body></html>");
-        out.close();
+        Double type = 0.00;
+                           type = Double.parseDouble(request.getParameter("animalType"));
+                Double age = Double.parseDouble(request.getParameter("age"));
+                Double manAge;
+                manAge = age * type;
+                response.setContentType(CONTENT_TYPE);
+                PrintWriter out = response.getWriter();
+                out.println("<html>");
+                out.println("<head><title>okowitz4</title></head>");
+                out.println("<body>");
+                out.println("<p>The age of your animal is " + manAge.toString() + ".</p>");
+                out.println("</body></html>");
+                out.close();
     }
 }
