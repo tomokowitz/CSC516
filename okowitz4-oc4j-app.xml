@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<orion-application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-application-10_0.xsd">
+    <web-module id="okowitz4-okowitz4-webapp" path="file:/C:/Users/tomokowitz/Documents/IT and Software/GitHub/CSC516/okowitz4/public_html/"/>
+    <jazn provider="XML" location="okowitz4-jazn-data.xml" default-realm="jazn.com"/>
+    <data-sources path="okowitz4-data-sources.xml"/>
+</orion-application>
