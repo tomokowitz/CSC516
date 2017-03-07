@@ -45,17 +45,36 @@ public class okowitz4 extends HttpServlet {
     public void doPost(HttpServletRequest request, 
                        HttpServletResponse response) throws ServletException, 
                                                             IOException {
+        
         Double type = 0.00;
                    type = Double.parseDouble(request.getParameter("animalType"));
         Double age = Double.parseDouble(request.getParameter("age"));
         Double manAge;
+        String name = "";
+        Integer intType = 0;
+        intType = Integer.parseInt( request.getParameter("animalType"));
+        switch(intType) {
+            case 1 :
+            name="human";
+            break;
+            case 7:
+            name = "dog";
+            break;
+            case 100:
+            name="fruit fly";
+            break;
+            default:
+            name="unknown cryptozoological species(!)";
+            break;
+            
+        }
         manAge = age * type;
         response.setContentType(CONTENT_TYPE);
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<head><title>okowitz4</title></head>");
         out.println("<body>");
-        out.println("<p>The age of your animal is " + manAge.toString() + ".</p>");
+        out.println("<p>The age of your animal is " + manAge.toString() + " " + name + " years.</p>");
         out.println("</body></html>");
         out.close();
     }

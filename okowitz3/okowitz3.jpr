@@ -87,6 +87,17 @@
          </list>
       </hash>
    </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="name" v="Default"/>
+         </hash>
+      </hash>
+      <list n="runConfigurationList">
+         <string v="Default"/>
+      </list>
+   </hash>
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
          <hash>
@@ -118,7 +129,7 @@
          <list n="libraryDefinitions">
             <hash>
                <list n="classPath">
-                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/ucanaccess-4.0.1.jar" jar-entry=""/>
+                  <url protocol="jar" path="file:/Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/ucanaccess-4.0.1.jar!/"/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Ucanaccess-4.0.1.jar"/>
@@ -127,7 +138,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="../../../../../../../Program Files/commons-lang3-3.5-bin/commons-lang3-3.5/commons-lang3-3.5.jar" jar-entry=""/>
+                  <url protocol="jar" path="file:/Program Files/commons-lang3-3.5-bin/commons-lang3-3.5/commons-lang3-3.5.jar!/"/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Commons-lang3-3.5.jar"/>
@@ -136,7 +147,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="../../../../../../../Program Files/commons-logging-1.2/commons-logging-1.2/commons-logging-1.2.jar" jar-entry=""/>
+                  <url protocol="jar" path="file:/Program Files/commons-logging-1.2/commons-logging-1.2/commons-logging-1.2.jar!/"/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Commons-logging-1.2.jar"/>
@@ -145,7 +156,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/lib/hsqldb.jar" jar-entry=""/>
+                  <url protocol="jar" path="file:/Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/lib/hsqldb.jar!/"/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Hsqldb.jar"/>
@@ -154,7 +165,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/lib/jackcess-2.1.6.jar" jar-entry=""/>
+                  <url protocol="jar" path="file:/Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/lib/jackcess-2.1.6.jar!/"/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Jackcess-2.1.6.jar"/>
@@ -163,7 +174,7 @@
             </hash>
             <hash>
                <list n="classPath">
-                  <url path="../../../../../../../Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/loader/ucanload.jar" jar-entry=""/>
+                  <url protocol="jar" path="file:/Program Files/UCanAccess-4.01-bin/UCanAccess-4.0.1-bin/loader/ucanload.jar!/"/>
                </list>
                <value n="deployedByDefault" v="true"/>
                <value n="description" v="Ucanload.jar"/>
@@ -201,5 +212,12 @@
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>
+   </hash>
+   <hash n="oracle.tip.tools.ide.pm.addin.PMProjectSettings">
+      <hash n="Integration_Content">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+      </hash>
    </hash>
 </jpr:project>
